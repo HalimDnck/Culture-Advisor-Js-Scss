@@ -9,7 +9,7 @@ console.log(day);
 var movieData = fetch("../json/movies.json")
 .then(response=>response.json())
 .then(data=>{
-   //DOM Html Elemts
+   //DOM Html Elements
    const name = document.querySelector('.movie-name');
    const trailer = document.querySelector('.video-frame');
    const image = document.querySelector('.movie-img');
