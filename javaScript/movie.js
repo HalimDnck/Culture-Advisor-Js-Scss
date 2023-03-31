@@ -1,7 +1,3 @@
-
-
-
-
 const date = new Date();
 let day = date.getDay()-1;
 console.log(day);
@@ -46,9 +42,4 @@ var movieData = fetch("../json/movies.json")
    writer1.innerHTML = movieWrt1;
    writer2.innerHTML = movieWrt2;
    writer3.innerHTML = movieWrt3;
-   
-
-   
-   
-   
 })
