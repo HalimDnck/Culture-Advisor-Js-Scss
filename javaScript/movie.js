@@ -1,3 +1,4 @@
+//Movie Update - every day
 const date = new Date();
 let day = date.getDay()-1;
 console.log(day);
@@ -42,4 +43,12 @@ var movieData = fetch("../json/movies.json")
    writer1.innerHTML = movieWrt1;
    writer2.innerHTML = movieWrt2;
    writer3.innerHTML = movieWrt3;
+}) 
+
+//Nav page
+const navBtn = document.querySelector(".nav-btn");
+const navPage = document.querySelector(".mobile-nav");
+
+navBtn.addEventListener("click", function(){
+   navPage.style.width= "50%";
 })

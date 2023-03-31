@@ -77,8 +77,8 @@ header .h-sub {
   justify-content: flex-end;
 }
 header .h-sub button {
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 50px;
   border-radius: 30px;
   border: 1px solid #F05454;
   background: none;
@@ -93,8 +93,59 @@ header .h-sub button:hover {
   background: #F05454;
   color: #F5F5F5;
 }
-header .mobile-nav {
+header .nav-btn {
   display: none;
+}
+
+.mobile-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F05454;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.mobile-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.mobile-nav ul img {
+  width: 80%;
+  padding-bottom: 50px;
+}
+.mobile-nav ul a {
+  font-size: 24px;
+  color: #121212;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.mobile-nav ul a:hover {
+  font-size: 26px;
+  color: white;
+}
+.mobile-nav ul .active {
+  color: white;
+}
+.mobile-nav ul button {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  cursor: pointer;
 }
 
 main {
@@ -200,16 +251,20 @@ section .reviews-container .review-box .review q {
 
 footer {
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   margin-top: 50px;
   background: #F05454;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+footer .f-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 footer .f-left img {
   width: 300px;
-  padding-top: 50px;
 }
 footer .f-mid nav ul {
   list-style: none;
@@ -254,4 +309,41 @@ footer .f-right button {
   padding-left: 0px;
   z-index: 3;
   margin-left: 300px;
+}
+
+@media only screen and (max-width: 1615px) {
+  footer .f-mid nav ul {
+    gap: 10px;
+    font-size: 18px;
+  }
+  footer .f-right input {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  footer .f-right button {
+    margin-left: 160px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  header .nav {
+    display: none;
+  }
+  header .h-sub {
+    display: none;
+  }
+  header .nav-btn {
+    display: flex;
+    font-size: 35px;
+    border: none;
+    background: none;
+    color: #F05454;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=movie.css.map */
