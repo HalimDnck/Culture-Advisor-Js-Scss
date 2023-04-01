@@ -115,6 +115,18 @@ header{
    overflow-x: hidden;
    transition: 0.5s;
    padding-top: 60px;
+
+   .quit-btn{
+      background: none;
+      border: none;
+      font-size: 32px;
+      cursor: pointer;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 10px;
+   }
    
    ul{
       list-style: none;
@@ -377,4 +389,6 @@ footer{
          cursor: pointer;
       }
    }
+
+   .movie-info{flex-direction: column;}
 }

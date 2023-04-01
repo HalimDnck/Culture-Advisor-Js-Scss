@@ -109,6 +109,16 @@ header .nav-btn {
   transition: 0.5s;
   padding-top: 60px;
 }
+.mobile-nav .quit-btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+}
 .mobile-nav ul {
   list-style: none;
   display: flex;
@@ -345,5 +355,8 @@ footer .f-right button {
     background: none;
     color: #F05454;
     cursor: pointer;
+  }
+  .movie-info {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=movie.css.map */

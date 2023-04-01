@@ -48,7 +48,28 @@ var movieData = fetch("../json/movies.json")
 //Nav page
 const navBtn = document.querySelector(".nav-btn");
 const navPage = document.querySelector(".mobile-nav");
+const quitBtn = document.querySelector(".quit-btn");
+
+
 
 navBtn.addEventListener("click", function(){
    navPage.style.width= "50%";
 })
+quitBtn.addEventListener("click", function(){
+   navPage.style.width= "0";
+})
+
+//media
+function myFunction(x) {
+   if (x.matches) { // If media query matches
+      navBtn.addEventListener("click", function(){
+         navPage.style.width= "100%";
+      })
+   } else {
+    
+   }
+}
+ var x = window.matchMedia("(max-width: 500px)")
+ myFunction(x)
+ x.addListener(myFunction);
+
